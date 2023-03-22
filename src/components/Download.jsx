@@ -4,6 +4,11 @@ import styles from '../styles/Global';
 import assets from '../assets';
 
 const Download = () => {
+  const url = 'https://github.com/johncortes00/react-native-nft-marketplace';
+  /*  const openInNewTab = (url) = {
+     window.open("url", '_blank', 'noopener, noreferrer');
+  };*/
+
   return (
     <div className={`${styles.section} ${styles.bgWhite}`}>
       <div className={`${styles.subSection} flex-col text-center`}>
@@ -15,7 +20,12 @@ const Download = () => {
             Get the full source code on Github
           </p>
         </div>
-        <button className={`${styles.btnPrimary}`}>Source Code</button>
+        <button
+          className={`${styles.btnPrimary}`}
+          onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
+        >
+          Source Code
+        </button>
         <div className={`${styles.flexCenter}`}>
           <img
             src={assets.scene}
