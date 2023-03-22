@@ -5,9 +5,6 @@ import assets from '../assets';
 
 const Download = () => {
   const url = 'https://github.com/johncortes00/react-native-nft-marketplace';
-  /*  const openInNewTab = (url) = {
-     window.open("url", '_blank', 'noopener, noreferrer');
-  };*/
 
   return (
     <div className={`${styles.section} ${styles.bgWhite}`}>
